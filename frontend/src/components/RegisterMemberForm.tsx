@@ -53,7 +53,7 @@ function TextField({
         name={name}
         type={type}
         required={required}
-        className="w-full rounded-md border border-neutral-300 px-3 py-2"
+        className="w-full rounded-md border border-neutral-400 px-3 py-2 font-medium text-neutral-900 placeholder:text-neutral-400 placeholder:font-normal focus:outline-none focus:ring-2 focus:ring-blue-900 focus:border-blue-900"
       />
     </div>
   );
