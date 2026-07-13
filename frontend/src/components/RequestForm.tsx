@@ -91,7 +91,7 @@ export function RequestForm() {
           ]}
         />
         <div>
-          <label className="block text-sm font-medium mb-1" htmlFor="location_description">
+          <label className="block text-sm font-bold text-neutral-900 mb-1" htmlFor="location_description">
             Location / landmark (hospital name, ward, nearest town, etc.)
           </label>
           <textarea
@@ -128,7 +128,7 @@ export function RequestForm() {
           <Field label="Family contact phone" name="family_contact_phone" type="tel" />
         </div>
         <div>
-          <label className="block text-sm font-medium mb-1" htmlFor="logistics_notes">
+          <label className="block text-sm font-bold text-neutral-900 mb-1" htmlFor="logistics_notes">
             Logistics notes (e.g. gate code, ward number) - not for confession or spiritual content
           </label>
           <textarea
@@ -159,7 +159,7 @@ function Field({
 }) {
   return (
     <div>
-      <label className="block text-sm font-medium mb-1" htmlFor={name}>
+      <label className="block text-sm font-bold text-neutral-900 mb-1" htmlFor={name}>
         {label}
       </label>
       <input
@@ -186,7 +186,7 @@ function Select({
 }) {
   return (
     <div>
-      <label className="block text-sm font-medium mb-1" htmlFor={name}>
+      <label className="block text-sm font-bold text-neutral-900 mb-1" htmlFor={name}>
         {label}
       </label>
       <select

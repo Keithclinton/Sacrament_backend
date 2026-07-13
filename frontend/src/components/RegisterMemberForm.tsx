@@ -45,7 +45,7 @@ function TextField({
 }) {
   return (
     <div>
-      <label className="block text-sm font-medium mb-1" htmlFor={name}>
+      <label className="block text-sm font-bold text-neutral-900 mb-1" htmlFor={name}>
         {label}
       </label>
       <input

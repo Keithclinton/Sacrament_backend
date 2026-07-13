@@ -18,7 +18,7 @@ export function LoginForm() {
         </p>
       )}
       <div>
-        <label className="block text-sm font-medium mb-1" htmlFor="username">
+        <label className="block text-sm font-bold text-neutral-900 mb-1" htmlFor="username">
           Username
         </label>
         <input
@@ -30,7 +30,7 @@ export function LoginForm() {
         />
       </div>
       <div>
-        <label className="block text-sm font-medium mb-1" htmlFor="password">
+        <label className="block text-sm font-bold text-neutral-900 mb-1" htmlFor="password">
           Password
         </label>
         <input
