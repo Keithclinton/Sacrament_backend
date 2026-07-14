@@ -1,1 +1,20 @@
--r requirements/prod.txt
+# Self-contained copy of requirements/base.txt + requirements/prod.txt, for
+# platforms (Railway/Railpack) that only copy this single root file into the
+# build context before running pip install - a `-r requirements/prod.txt`
+# indirection fails there since requirements/ isn't copied at that step.
+# Keep in sync with requirements/base.txt and requirements/prod.txt.
+
+Django>=5.0,<5.1
+djangorestframework>=3.15,<3.16
+djangorestframework-simplejwt>=5.3,<5.4
+psycopg2-binary>=2.9,<3.0
+django-cors-headers>=4.3,<4.4
+django-filter>=24.2,<25.0
+drf-spectacular>=0.27,<0.28
+celery>=5.3,<5.4
+redis>=5.0,<6.0
+django-celery-beat>=2.6,<2.7
+django-environ>=0.11,<0.12
+africastalking>=1.2,<2.0
+gunicorn>=22.0,<23.0
+whitenoise>=6.6,<6.7
